@@ -1,0 +1,35 @@
+{
+  "attempted_responses_this_run": 345,
+  "budget_cap_inr_approx": 166.0,
+  "budget_cap_usd": 2.0,
+  "cache_path": "outputs/url_fixture_ablation_run/cache.jsonl",
+  "duplicate_cache_lines": 0,
+  "events_cached_total": 600,
+  "events_expected": 600,
+  "events_parsed_total": 600,
+  "invalid_responses_this_run": 0,
+  "models": [
+    "gpt-5.4-mini",
+    "gemini-2.5-flash"
+  ],
+  "output_path": "outputs/url_fixture_ablation_run/runs.jsonl",
+  "paid_run_authorized": true,
+  "phase": "url_fixture_ablation",
+  "policies": [
+    "baseline",
+    "m2_structured_skeptic",
+    "m6_checklist"
+  ],
+  "projected_inr_approx": 87.7,
+  "projected_usd": 1.056685,
+  "scenario_path": "outputs/url_fixture_ablation/scenarios_fixture.jsonl",
+  "scenarios": 100,
+  "spent_inr_all_cache_lines_approx": 23.98,
+  "spent_inr_approx": 23.98,
+  "spent_inr_unique_latest_approx": 23.98,
+  "spent_usd": 0.28897,
+  "spent_usd_all_cache_lines": 0.28897,
+  "spent_usd_unique_latest": 0.28897,
+  "stopped": null,
+  "written_events_this_run": 345
+}

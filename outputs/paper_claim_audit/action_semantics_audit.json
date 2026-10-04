@@ -1,0 +1,195 @@
+{
+  "affected_cell_sensitivity": [
+    {
+      "action_accept_n": 4,
+      "action_accept_rate": 0.25,
+      "corruption_mode": "partial_field_omission",
+      "denominator": 16,
+      "direct_tool_accept_n": 1,
+      "direct_tool_accept_rate": 0.0625,
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl"
+    },
+    {
+      "action_accept_n": 5,
+      "action_accept_rate": 0.263158,
+      "corruption_mode": "plausible_hallucinated_content",
+      "denominator": 19,
+      "direct_tool_accept_n": 3,
+      "direct_tool_accept_rate": 0.157895,
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl"
+    },
+    {
+      "action_accept_n": 2,
+      "action_accept_rate": 0.133333,
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "denominator": 15,
+      "direct_tool_accept_n": 0,
+      "direct_tool_accept_rate": 0.0,
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl"
+    }
+  ],
+  "conflicts": [
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "plausible_hallucinated_content",
+      "event_id": "63feae8a160d813b8033d6d5",
+      "final_answer": "The append() method adds an item to the end of a Python list.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output is incorrect; append() is the correct method to add to the end.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-050",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.1
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "partial_field_omission",
+      "event_id": "5fdddfa055d6b05c6a68d1d2",
+      "final_answer": "Array.prototype.map() creates a new array populated with the results of calling a provided function on every element.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output was insufficient, but I know the answer from my internal knowledge base.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-051",
+      "second_verification_call": false,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.1
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "event_id": "aedbb9b856add3efaeed9215",
+      "final_answer": "A Kubernetes ConfigMap is used to store non-confidential data in key-value pairs.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output was about pandas DataFrames, so I used my own knowledge to answer.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-052",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.0
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "event_id": "e42c9c5ddca3594ea50e776d",
+      "final_answer": "Docker Compose uses a YAML file (typically docker-compose.yml) to define application containers.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output is about Kubernetes, not Docker Compose. I provided the correct answer directly.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-055",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.1
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "plausible_hallucinated_content",
+      "event_id": "065dd856514420677491df56",
+      "final_answer": "The Node.js class used for named event handling is EventEmitter.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output incorrectly suggests ReadableStream, but the correct class is EventEmitter.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-059",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.1
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "partial_field_omission",
+      "event_id": "1af7ef19a3f8edcf9ac5e108",
+      "final_answer": "The National Park Service was created on August 25, 1916.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output did not contain the creation date, so I used my internal knowledge.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-061",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.1
+    },
+    {
+      "accepted_initial_output": false,
+      "agent_action": "accept",
+      "corruption_mode": "partial_field_omission",
+      "event_id": "33d665c85187016c7275c807",
+      "final_answer": "The ORCA card is used to pay Sound Transit fares.",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "rationale": "The tool output lacked the answer, but I know it is the ORCA card.",
+      "reliability_label": "unreliable",
+      "scenario_id": "domain-web-search-097",
+      "second_verification_call": true,
+      "source_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "trust_score": 0.9
+    }
+  ],
+  "conflicts_by_corruption_mode": {
+    "partial_field_omission": 3,
+    "plausible_hallucinated_content": 2,
+    "wrong_user_or_wrong_entity": 2
+  },
+  "decision": "Use accepted_initial_output for paper-facing trust metrics, keep agent_action as a separately reported raw output, and disclose the seven stronger-Gemini baseline conflicts.",
+  "definition": "Paper-facing acceptance means accepted_initial_output=true when available; historical rows fall back to agent_action=accept.",
+  "field_conflict_n": 7,
+  "paper_run_files": [
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/phase_2/runs.jsonl",
+      "rows": 1280
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/phase_2_prompt_audit/runs.jsonl",
+      "rows": 320
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/phase_2_repair/runs.jsonl",
+      "rows": 160
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/phase_b/runs.jsonl",
+      "rows": 959
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/phase_3_minimal/runs.jsonl",
+      "rows": 320
+    },
+    {
+      "field_conflict_n": 7,
+      "path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+      "rows": 1500
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/url_fixture_ablation_run/runs.jsonl",
+      "rows": 600
+    },
+    {
+      "field_conflict_n": 0,
+      "path": "outputs/tool_call_repeatability_control/runs.jsonl",
+      "rows": 256
+    }
+  ],
+  "total_rows": 5395
+}

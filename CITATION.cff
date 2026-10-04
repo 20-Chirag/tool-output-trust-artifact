@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated paper."
+title: "When Agents Trust the Wrong Tool Output: Reproducibility Artifact"
+type: software
+authors:
+  - family-names: Gupta
+    given-names: Chirag
+  - family-names: Ansari
+    given-names: Rajeel Ahmad
+repository-code: "https://github.com/20-Chirag/tool-output-trust-artifact"
+date-released: 2026-10-05

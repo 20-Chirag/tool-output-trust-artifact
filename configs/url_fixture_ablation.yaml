@@ -1,0 +1,48 @@
+seed: 20260722
+phase: url_fixture_ablation
+
+source:
+  scenarios_path: outputs/url_fixture_ablation/scenarios_fixture.jsonl
+  include_tool_classes:
+    - web_search
+  expected_scenarios: 100
+  expected_per_tool_class: 100
+  expected_reliable_per_tool_class: 50
+  expected_unreliable_per_tool_class: 50
+
+models:
+  - provider: openai
+    name: gpt-5.4-mini
+    tier: cheap
+    api_env: OPENAI_API_KEY
+    input_per_1m: 0.75
+    output_per_1m: 4.50
+  - provider: gemini
+    name: gemini-2.5-flash
+    tier: cheap
+    api_env: GOOGLE_API_KEY
+    input_per_1m: 0.30
+    output_per_1m: 2.50
+
+policies:
+  - baseline
+  - m2_structured_skeptic
+  - m6_checklist
+
+run:
+  output_dir: outputs/url_fixture_ablation_run
+  output_path: outputs/url_fixture_ablation_run/runs.jsonl
+  cache_path: outputs/url_fixture_ablation_run/cache.jsonl
+  max_usd: 2.00
+  timeout_seconds: 180
+  max_output_tokens: 448
+  retry_max_output_tokens: 768
+  gemini_thinking:
+    gemini-2.5-flash:
+      thinking_budget: 0
+  refresh_invalid_cache: true
+  temperature: 0
+  paid_run_authorized: false
+
+cost:
+  output_path: outputs/url_fixture_ablation_run/cost_estimate.json

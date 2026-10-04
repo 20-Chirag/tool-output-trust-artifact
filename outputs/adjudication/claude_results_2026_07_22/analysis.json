@@ -1,0 +1,219 @@
+{
+  "adjudication_type": "independent Claude adjudication; not human adjudication",
+  "confidence_distributions": {
+    "f1": {
+      "high": 42,
+      "medium": 8
+    },
+    "f2": {
+      "high": 40,
+      "low": 2,
+      "medium": 11
+    },
+    "f3_mechanism": {
+      "high": 3,
+      "medium": 7
+    },
+    "f3_omission": {
+      "high": 4,
+      "medium": 2
+    }
+  },
+  "dependence_and_denominators": {
+    "f1": {
+      "note": "selected accepted corrupted calculator events; not all calculator events and not independent rows",
+      "repeated_scenarios": {
+        "phase2-candidate-calculator-021": 4,
+        "phase2-candidate-calculator-022": 4,
+        "phase2-candidate-calculator-024": 4,
+        "phase2-candidate-calculator-025": 4,
+        "phase2-candidate-calculator-027": 4,
+        "phase2-candidate-calculator-028": 3,
+        "phase2-candidate-calculator-030": 4,
+        "phase2-candidate-calculator-031": 4,
+        "phase2-candidate-calculator-033": 3,
+        "phase2-candidate-calculator-034": 4,
+        "phase2-candidate-calculator-036": 4,
+        "phase2-candidate-calculator-037": 4,
+        "phase2-candidate-calculator-039": 4
+      },
+      "rows": 50,
+      "unique_scenarios": 13,
+      "unique_source_scenario_pairs": 26
+    },
+    "f2": {
+      "note": "concern strings; multiple concerns may come from related events, so strings are not independent experimental units",
+      "repeated_scenarios": {
+        "real-web-search-002": 3,
+        "real-web-search-018": 5
+      },
+      "rows": 53,
+      "unique_scenarios": 47
+    },
+    "f3_mechanism": {
+      "repeated_scenarios": {
+        "domain-web-search-066": 2,
+        "domain-web-search-075": 2,
+        "domain-web-search-093": 2
+      },
+      "rows": 10,
+      "unique_scenarios": 7
+    },
+    "f3_omission": {
+      "repeated_scenarios": {},
+      "rows": 6,
+      "unique_scenarios": 6
+    }
+  },
+  "headline_counts": {
+    "f1_actual_arithmetic_evidence": {
+      "denominator": 50,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 0,
+      "rate": 0.0,
+      "wilson_95_ci_high": 0.07134759913335872,
+      "wilson_95_ci_low": 6.938893903907228e-18
+    },
+    "f1_verbal_compliance": {
+      "denominator": 50,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 50,
+      "rate": 1.0,
+      "wilson_95_ci_high": 1.0,
+      "wilson_95_ci_low": 0.9286524008666414
+    },
+    "f2_generic_concerns": {
+      "denominator": 53,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 49,
+      "rate": 0.9245283018867925,
+      "wilson_95_ci_high": 0.9702604449130533,
+      "wilson_95_ci_low": 0.8214152251634678
+    },
+    "f3_content_check_present": {
+      "denominator": 10,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 0,
+      "rate": 0.0,
+      "wilson_95_ci_high": 0.2775327998628892,
+      "wilson_95_ci_low": 0.0
+    },
+    "f3_source_authority_substitution": {
+      "denominator": 10,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 8,
+      "rate": 0.8,
+      "wilson_95_ci_high": 0.9433178485456247,
+      "wilson_95_ci_low": 0.49016247153664183
+    }
+  },
+  "heuristic_comparisons": {
+    "f2_confusion": [
+      {
+        "claude": "generic",
+        "count": 12,
+        "heuristic": "ambiguous"
+      },
+      {
+        "claude": "specific",
+        "count": 2,
+        "heuristic": "ambiguous"
+      },
+      {
+        "claude": "ambiguous",
+        "count": 2,
+        "heuristic": "generic"
+      },
+      {
+        "claude": "generic",
+        "count": 30,
+        "heuristic": "generic"
+      },
+      {
+        "claude": "generic",
+        "count": 7,
+        "heuristic": "specific"
+      }
+    ],
+    "f2_exact_agreement": {
+      "denominator": 53,
+      "interval_note": "row-level descriptive interval only; independence is not assumed when dependence is documented",
+      "numerator": 30,
+      "rate": 0.5660377358490566,
+      "wilson_95_ci_high": 0.6904960344024968,
+      "wilson_95_ci_low": 0.4326535142760728
+    },
+    "f3_candidates_claude_authority": 4,
+    "f3_heuristic_authority_candidates": 5,
+    "f3_unclear_candidate_claude_distribution": {
+      "source_authority_substitution": 4,
+      "verbal_check_without_work": 1
+    },
+    "omission_clean_visible_flag_vs_claude_grounding": [
+      {
+        "claude_grounded": "no",
+        "clean_answer_visible": "false",
+        "count": 5
+      },
+      {
+        "claude_grounded": "yes",
+        "clean_answer_visible": "false",
+        "count": 1
+      }
+    ]
+  },
+  "label_distributions": {
+    "f1_actual_arithmetic_evidence": {
+      "no": 50
+    },
+    "f1_verbal_compliance": {
+      "yes": 50
+    },
+    "f2_concern_type": {
+      "ambiguous": 2,
+      "generic": 49,
+      "specific": 2
+    },
+    "f2_field_value_contradiction": {
+      "ambiguous": 1,
+      "no": 50,
+      "yes": 2
+    },
+    "f3_content_check_present": {
+      "no": 10
+    },
+    "f3_omission_construct": {
+      "parametric_memory_substitution": 3,
+      "tool_grounded_accept": 1,
+      "unsupported_acceptance": 2
+    },
+    "f3_omission_memory_use": {
+      "no": 3,
+      "yes": 3
+    },
+    "f3_omission_visible_grounding": {
+      "no": 5,
+      "yes": 1
+    },
+    "f3_primary_mechanism": {
+      "parametric_memory_substitution": 1,
+      "source_authority_substitution": 8,
+      "verbal_check_without_work": 1
+    }
+  },
+  "paper_boundary": {
+    "may_report": [
+      "Claude independently labeled all 50 selected F1 rationales as verbal compliance and none as containing auditable arithmetic",
+      "Claude labeled 49 of 53 concern strings generic, with category-boundary caveats",
+      "Claude found no auditable content check in the 10 GPT web silent-accept rationales",
+      "Claude identified construct heterogeneity in the six omission accepts"
+    ],
+    "must_not_report": [
+      "human adjudication",
+      "inter-rater reliability between humans",
+      "proof of latent model reasoning",
+      "independent-sample confidence claims treating concern strings or repeated scenarios as independent"
+    ],
+    "recommended_use": "secondary external-model audit and guide for targeted human adjudication"
+  }
+}

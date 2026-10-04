@@ -1,0 +1,2171 @@
+{
+  "ci_notes": {
+    "independent_deltas": "Independent bootstrap with 10000 resamples.",
+    "paired_deltas": "Reused paired-bootstrap intervals from phase evaluators where available.",
+    "simple_proportions": "Wilson 95% intervals."
+  },
+  "claims": [
+    {
+      "ci_method": "descriptive only; no independent-row interval",
+      "claim_id": "F1_phase_a_verbal_compliance",
+      "count": {
+        "dependence_note": "selected accepted decisions; not independent scenarios",
+        "hi": null,
+        "lo": null,
+        "n": 24,
+        "numerator": 24,
+        "point": 1.0
+      },
+      "dependence_note": "selected accepted decisions; not independent scenarios",
+      "description": "Phase A accepted corrupted calculator cases with verbal-compliance markers.",
+      "finding": "F1",
+      "metric": "verbal_compliance_rate_among_accepted_target_calculator_cases",
+      "source_artifacts": [
+        "outputs/phase_2_prompt_audit/m6_mental_math_audit.json"
+      ]
+    },
+    {
+      "ci_method": "descriptive only; no independent-row interval",
+      "claim_id": "F1_phase_b_m0_m6_verbal_compliance",
+      "count": {
+        "dependence_note": "selected accepted decisions; not independent scenarios",
+        "hi": null,
+        "lo": null,
+        "n": 26,
+        "numerator": 21,
+        "point": 0.8076923076923077
+      },
+      "dependence_note": "selected accepted decisions; not independent scenarios",
+      "description": "Phase B M0-naive M6 accepted target corrupted calculator cases with verbal-compliance markers.",
+      "finding": "F1",
+      "metric": "verbal_compliance_rate_among_accepted_target_calculator_cases",
+      "source_artifacts": [
+        "outputs/phase_b/finding_robustness.json"
+      ]
+    },
+    {
+      "ci_method": "descriptive only; no independent-row interval",
+      "claim_id": "F1_phase3_target_acceptance",
+      "count": {
+        "dependence_note": "decision cells from repeated scenarios/policies",
+        "hi": null,
+        "lo": null,
+        "n": 26,
+        "numerator": 0,
+        "point": 0.0
+      },
+      "dependence_note": "decision cells from repeated scenarios/policies",
+      "description": "Phase 3 stronger Gemini accepted target corrupted calculator cases under M6/M0-M6.",
+      "finding": "F1",
+      "metric": "acceptance_rate_on_target_corrupted_calculator_cases",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/finding_robustness.json"
+      ]
+    },
+    {
+      "ci_method": "descriptive only; no independent-row interval",
+      "claim_id": "F1_external_claude_check_passed_language",
+      "count": {
+        "dependence_note": "external-model coding; no human adjudication; 13 unique scenarios and 26 source-scenario pairs",
+        "hi": null,
+        "lo": null,
+        "n": 50,
+        "numerator": 50,
+        "point": 1.0
+      },
+      "dependence_note": "external-model coding; no human adjudication; 13 unique scenarios and 26 source-scenario pairs",
+      "description": "Blinded external-Claude coding of selected accepted corrupted-calculator decisions.",
+      "finding": "F1_secondary_diagnostic",
+      "metric": "external_model_check_passed_language",
+      "source_artifacts": [
+        "outputs/adjudication/claude_results_2026_07_22/analysis.json"
+      ]
+    },
+    {
+      "ci_method": "descriptive only; no independent-row interval",
+      "claim_id": "F1_external_claude_auditable_arithmetic",
+      "count": {
+        "dependence_note": "external-model coding; no human adjudication; 13 unique scenarios and 26 source-scenario pairs",
+        "hi": null,
+        "lo": null,
+        "n": 50,
+        "numerator": 0,
+        "point": 0.0
+      },
+      "dependence_note": "external-model coding; no human adjudication; 13 unique scenarios and 26 source-scenario pairs",
+      "description": "Blinded external-Claude coding of selected accepted corrupted-calculator decisions.",
+      "finding": "F1_secondary_diagnostic",
+      "metric": "external_model_auditable_arithmetic",
+      "source_artifacts": [
+        "outputs/adjudication/claude_results_2026_07_22/analysis.json"
+      ]
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_baseline_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / baseline: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_baseline_silent_acceptance",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / baseline: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.10000000000000003,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.03999999999999998,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 10,
+          "rate": 0.2
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 12,
+          "rate": 0.24
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_baseline_trust_accuracy",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / baseline: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.050000000000000044,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.020000000000000018,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 90,
+          "rate": 0.9
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 88,
+          "rate": 0.88
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m2_structured_skeptic_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m2_structured_skeptic: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.76,
+        "ci_low": 0.5,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.64,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 33,
+          "rate": 0.66
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 1,
+          "rate": 0.02
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m2_structured_skeptic_silent_acceptance",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m2_structured_skeptic: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": -0.02,
+        "ci_low": -0.16,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.08,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 4,
+          "rate": 0.08
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m2_structured_skeptic_trust_accuracy",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m2_structured_skeptic: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": -0.20999999999999996,
+        "ci_low": -0.35,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.2799999999999999,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 67,
+          "rate": 0.67
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 95,
+          "rate": 0.95
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m6_checklist_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m6_checklist: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.72,
+        "ci_low": 0.44,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.58,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 30,
+          "rate": 0.6
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 1,
+          "rate": 0.02
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m6_checklist_silent_acceptance",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m6_checklist: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": -0.04,
+        "ci_low": -0.22,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.12,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 6,
+          "rate": 0.12
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gpt-5_4-mini_m6_checklist_trust_accuracy",
+      "description": "Matched URL-host ablation for gpt-5.4-mini / m6_checklist: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": -0.14,
+        "ci_low": -0.30999999999999994,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.2300000000000001,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 70,
+          "rate": 0.7
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 93,
+          "rate": 0.93
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_baseline_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / baseline: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_baseline_silent_acceptance",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / baseline: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 11,
+          "rate": 0.22
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 11,
+          "rate": 0.22
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_baseline_trust_accuracy",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / baseline: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 89,
+          "rate": 0.89
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 89,
+          "rate": 0.89
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m2_structured_skeptic_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m2_structured_skeptic: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m2_structured_skeptic_silent_acceptance",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m2_structured_skeptic: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.1,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.04000000000000001,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 6,
+          "rate": 0.12
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 8,
+          "rate": 0.16
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m2_structured_skeptic_trust_accuracy",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m2_structured_skeptic: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.04999999999999993,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.019999999999999907,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 94,
+          "rate": 0.94
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 92,
+          "rate": 0.92
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m6_checklist_false_defer_or_verify",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m6_checklist: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m6_checklist_silent_acceptance",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m6_checklist: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.06,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": -0.020000000000000018,
+        "fixture": {
+          "denominator": 50,
+          "numerator": 9,
+          "rate": 0.18
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 50,
+          "numerator": 10,
+          "rate": 0.2
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_url_host_gemini-2_5-flash_m6_checklist_trust_accuracy",
+      "description": "Matched URL-host ablation for gemini-2.5-flash / m6_checklist: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.030000000000000027,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "delta_fixture_minus_real": 0.010000000000000009,
+        "fixture": {
+          "denominator": 100,
+          "numerator": 91,
+          "rate": 0.91
+        },
+        "paired_capture_clusters": 50,
+        "real": {
+          "denominator": 100,
+          "numerator": 90,
+          "rate": 0.9
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/paired_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_baseline_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / baseline on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 1,
+          "rate": 0.0625
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 16,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 16,
+          "numerator": 1,
+          "rate": 0.0625
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_baseline_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / baseline on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.26315789473684215,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": -0.10526315789473689,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 9,
+          "rate": 0.47368421052631576
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 19,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 19,
+          "numerator": 11,
+          "rate": 0.5789473684210527
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_baseline_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / baseline on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 15,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m2_structured_skeptic_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m2_structured_skeptic on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 16,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m2_structured_skeptic_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m2_structured_skeptic on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": -0.05263157894736842,
+        "ci_low": -0.42105263157894735,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": -0.21052631578947367,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 19,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 19,
+          "numerator": 4,
+          "rate": 0.21052631578947367
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m2_structured_skeptic_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m2_structured_skeptic on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 15,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m6_checklist_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m6_checklist on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.1875,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": -0.0625,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 16,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 16,
+          "numerator": 1,
+          "rate": 0.0625
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m6_checklist_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m6_checklist on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": -0.10526315789473684,
+        "ci_low": -0.47368421052631576,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": -0.2631578947368421,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 19,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 19,
+          "numerator": 5,
+          "rate": 0.2631578947368421
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gpt-5_4-mini_m6_checklist_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gpt-5.4-mini / m6_checklist on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gpt-5.4-mini",
+        "n_scenarios": 15,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_baseline_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / baseline on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 16,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_baseline_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / baseline on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 11,
+          "rate": 0.5789473684210527
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 19,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 19,
+          "numerator": 11,
+          "rate": 0.5789473684210527
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_baseline_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / baseline on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 15,
+        "policy_name": "baseline",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m2_structured_skeptic_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m2_structured_skeptic on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 16,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m2_structured_skeptic_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m2_structured_skeptic on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.2631578947368421,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": -0.10526315789473684,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 6,
+          "rate": 0.3157894736842105
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 19,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 19,
+          "numerator": 8,
+          "rate": 0.42105263157894735
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m2_structured_skeptic_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m2_structured_skeptic on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 15,
+        "policy_name": "m2_structured_skeptic",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m6_checklist_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m6_checklist on partial_field_omission.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "partial_field_omission",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 16,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 16,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m6_checklist_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m6_checklist on plausible_hallucinated_content.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": -0.1578947368421053,
+        "corruption_mode": "plausible_hallucinated_content",
+        "delta_fixture_minus_real": -0.05263157894736842,
+        "fixture": {
+          "denominator": 19,
+          "numerator": 9,
+          "rate": 0.47368421052631576
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 19,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 19,
+          "numerator": 10,
+          "rate": 0.5263157894736842
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap; subgroup intervals not multiplicity-adjusted",
+      "claim_id": "F3_url_host_mode_gemini-2_5-flash_m6_checklist_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "description": "Matched URL-host silent-acceptance delta for gemini-2.5-flash / m6_checklist on wrong_user_or_wrong_entity.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "result": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "corruption_mode": "wrong_user_or_wrong_entity",
+        "delta_fixture_minus_real": 0.0,
+        "fixture": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        },
+        "model_name": "gemini-2.5-flash",
+        "n_scenarios": 15,
+        "policy_name": "m6_checklist",
+        "real": {
+          "denominator": 15,
+          "numerator": 0,
+          "rate": 0.0
+        }
+      },
+      "source_artifacts": [
+        "outputs/url_fixture_ablation_run/corruption_mode_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m2_structured_skeptic_false_defer_or_verify",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-2.5-flash: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "delta_comparison_minus_baseline": 0.0,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m2_structured_skeptic_silent_acceptance",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-2.5-flash: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.22,
+          "numerator": 11
+        },
+        "ci_high": 0.0,
+        "ci_low": -0.13999999999999999,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.16,
+          "numerator": 8
+        },
+        "delta_comparison_minus_baseline": -0.06,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m2_structured_skeptic_trust_accuracy",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-2.5-flash: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.89,
+          "numerator": 89
+        },
+        "ci_high": 0.06999999999999995,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.92,
+          "numerator": 92
+        },
+        "delta_comparison_minus_baseline": 0.030000000000000027,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m6_checklist_false_defer_or_verify",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-2.5-flash: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "delta_comparison_minus_baseline": 0.0,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m6_checklist_silent_acceptance",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-2.5-flash: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.22,
+          "numerator": 11
+        },
+        "ci_high": 0.0,
+        "ci_low": -0.060000000000000026,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.2,
+          "numerator": 10
+        },
+        "delta_comparison_minus_baseline": -0.01999999999999999,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-2_5-flash_m6_checklist_trust_accuracy",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-2.5-flash: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.89,
+          "numerator": 89
+        },
+        "ci_high": 0.030000000000000027,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.9,
+          "numerator": 90
+        },
+        "delta_comparison_minus_baseline": 0.010000000000000009,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m2_structured_skeptic_false_defer_or_verify",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-3.1-pro-preview: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.18,
+        "ci_low": 0.02,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.1,
+          "numerator": 5
+        },
+        "delta_comparison_minus_baseline": 0.1,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m2_structured_skeptic_silent_acceptance",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-3.1-pro-preview: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.08,
+          "numerator": 4
+        },
+        "ci_high": 0.0,
+        "ci_low": -0.14,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.02,
+          "numerator": 1
+        },
+        "delta_comparison_minus_baseline": -0.06,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m2_structured_skeptic_trust_accuracy",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gemini-3.1-pro-preview: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.96,
+          "numerator": 96
+        },
+        "ci_high": 0.029999999999999916,
+        "ci_low": -0.06999999999999995,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.94,
+          "numerator": 94
+        },
+        "delta_comparison_minus_baseline": -0.020000000000000018,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m6_checklist_false_defer_or_verify",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-3.1-pro-preview: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "delta_comparison_minus_baseline": 0.0,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m6_checklist_silent_acceptance",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-3.1-pro-preview: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.08,
+          "numerator": 4
+        },
+        "ci_high": 0.04000000000000001,
+        "ci_low": -0.08000000000000002,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.06,
+          "numerator": 3
+        },
+        "delta_comparison_minus_baseline": -0.020000000000000004,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gemini-3_1-pro-preview_m6_checklist_trust_accuracy",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gemini-3.1-pro-preview: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.96,
+          "numerator": 96
+        },
+        "ci_high": 0.04999999999999993,
+        "ci_low": -0.020000000000000018,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.97,
+          "numerator": 97
+        },
+        "delta_comparison_minus_baseline": 0.010000000000000009,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m2_structured_skeptic_false_defer_or_verify",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gpt-5.4-mini: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.06,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.02,
+          "numerator": 1
+        },
+        "delta_comparison_minus_baseline": 0.02,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m2_structured_skeptic_silent_acceptance",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gpt-5.4-mini: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.24,
+          "numerator": 12
+        },
+        "ci_high": -0.060000000000000005,
+        "ci_low": -0.26,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.08,
+          "numerator": 4
+        },
+        "delta_comparison_minus_baseline": -0.15999999999999998,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m2_structured_skeptic_trust_accuracy",
+      "description": "Clean 50-domain paired m2_structured_skeptic versus baseline for gpt-5.4-mini: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.88,
+          "numerator": 88
+        },
+        "ci_high": 0.13,
+        "ci_low": 0.019999999999999907,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.95,
+          "numerator": 95
+        },
+        "delta_comparison_minus_baseline": 0.06999999999999995,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m6_checklist_false_defer_or_verify",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gpt-5.4-mini: false_defer_or_verify.",
+      "finding": "F3",
+      "metric": "false_defer_or_verify",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "ci_high": 0.06,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.02,
+          "numerator": 1
+        },
+        "delta_comparison_minus_baseline": 0.02,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m6_checklist_silent_acceptance",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gpt-5.4-mini: silent_acceptance.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 50,
+          "estimate": 0.24,
+          "numerator": 12
+        },
+        "ci_high": -0.01999999999999999,
+        "ci_low": -0.22000000000000003,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 50,
+          "estimate": 0.12,
+          "numerator": 6
+        },
+        "delta_comparison_minus_baseline": -0.12,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "paired source-capture bootstrap",
+      "claim_id": "F3_clean_gpt-5_4-mini_m6_checklist_trust_accuracy",
+      "description": "Clean 50-domain paired m6_checklist versus baseline for gpt-5.4-mini: trust_accuracy.",
+      "finding": "F3",
+      "metric": "trust_accuracy",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "reference_policy": "baseline",
+      "result": {
+        "baseline": {
+          "denominator": 100,
+          "estimate": 0.88,
+          "numerator": 88
+        },
+        "ci_high": 0.09999999999999998,
+        "ci_low": 0.0,
+        "ci_method": "paired source-capture percentile bootstrap",
+        "comparison": {
+          "denominator": 100,
+          "estimate": 0.93,
+          "numerator": 93
+        },
+        "delta_comparison_minus_baseline": 0.050000000000000044,
+        "paired_capture_clusters": 50
+      },
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/paired_policy_deltas.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-2_5-flash_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "count": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      },
+      "description": "Clean baseline gemini-2.5-flash silent acceptance on partial_field_omission web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-2_5-flash_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "count": {
+        "capture_bootstrap_ci_high": 0.7894736842105263,
+        "capture_bootstrap_ci_low": 0.3684210526315789,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7685810871754576,
+        "ci_low": 0.3627590353425504,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5789473684210527,
+        "numerator": 11
+      },
+      "description": "Clean baseline gemini-2.5-flash silent acceptance on plausible_hallucinated_content web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-2_5-flash_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "count": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      },
+      "description": "Clean baseline gemini-2.5-flash silent acceptance on wrong_user_or_wrong_entity web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-3_1-pro-preview_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "count": {
+        "capture_bootstrap_ci_high": 0.1875,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.28328737570298945,
+        "ci_low": 0.01111934476464252,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0625,
+        "numerator": 1
+      },
+      "description": "Clean baseline gemini-3.1-pro-preview silent acceptance on partial_field_omission web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-3_1-pro-preview_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "count": {
+        "capture_bootstrap_ci_high": 0.3157894736842105,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.37565475270329074,
+        "ci_low": 0.05520471638534141,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.15789473684210525,
+        "numerator": 3
+      },
+      "description": "Clean baseline gemini-3.1-pro-preview silent acceptance on plausible_hallucinated_content web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gemini-3_1-pro-preview_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "count": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      },
+      "description": "Clean baseline gemini-3.1-pro-preview silent acceptance on wrong_user_or_wrong_entity web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gpt-5_4-mini_partial_field_omission",
+      "corruption_mode": "partial_field_omission",
+      "count": {
+        "capture_bootstrap_ci_high": 0.1875,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.28328737570298945,
+        "ci_low": 0.01111934476464252,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0625,
+        "numerator": 1
+      },
+      "description": "Clean baseline gpt-5.4-mini silent acceptance on partial_field_omission web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gpt-5_4-mini_plausible_hallucinated_content",
+      "corruption_mode": "plausible_hallucinated_content",
+      "count": {
+        "capture_bootstrap_ci_high": 0.7894736842105263,
+        "capture_bootstrap_ci_low": 0.3684210526315789,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7685810871754576,
+        "ci_low": 0.3627590353425504,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5789473684210527,
+        "numerator": 11
+      },
+      "description": "Clean baseline gpt-5.4-mini silent acceptance on plausible_hallucinated_content web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "Wilson 95% interval",
+      "claim_id": "F3_corruption_gpt-5_4-mini_wrong_user_or_wrong_entity",
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "count": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      },
+      "description": "Clean baseline gpt-5.4-mini silent acceptance on wrong_user_or_wrong_entity web corruptions.",
+      "finding": "F3",
+      "metric": "silent_acceptance",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/clean_web_diagnostic/corruption_mode_metrics.json"
+      ],
+      "tool_class": "web_search"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_baseline_silent_acceptance",
+      "count": {
+        "hi": 0.9911185511992047,
+        "lo": 0.763868806553258,
+        "n": 20,
+        "numerator": 19,
+        "point": 0.95
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api baseline silent_acceptance.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m6_checklist_silent_acceptance",
+      "count": {
+        "hi": 0.23613119344674205,
+        "lo": 0.008881448800795402,
+        "n": 20,
+        "numerator": 1,
+        "point": 0.05
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m6_checklist silent_acceptance.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m0_naive_m6_silent_acceptance",
+      "count": {
+        "hi": 0.16112515805281938,
+        "lo": 0.0,
+        "n": 20,
+        "numerator": 0,
+        "point": 0.0
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m0_naive_m6 silent_acceptance.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "silent_acceptance",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m6_checklist_false_defer_or_verify",
+      "count": {
+        "hi": 0.9476312541037835,
+        "lo": 0.6395811352592431,
+        "n": 20,
+        "numerator": 17,
+        "point": 0.85
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m6_checklist false_defer_or_verify.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m0_naive_m6_false_defer_or_verify",
+      "count": {
+        "hi": 0.8881382985923343,
+        "lo": 0.531299122381256,
+        "n": 20,
+        "numerator": 15,
+        "point": 0.75
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m0_naive_m6 false_defer_or_verify.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "false_defer_or_verify",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m6_checklist_trust_accuracy",
+      "count": {
+        "hi": 0.6929469218909508,
+        "lo": 0.39829091798932054,
+        "n": 40,
+        "numerator": 22,
+        "point": 0.55
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m6_checklist trust_accuracy.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    },
+    {
+      "ci_method": "wilson",
+      "claim_id": "F5_gemini_3_1_pro_m0_naive_m6_trust_accuracy",
+      "count": {
+        "hi": 0.7577702083276673,
+        "lo": 0.47032439137301096,
+        "n": 40,
+        "numerator": 25,
+        "point": 0.625
+      },
+      "description": "Confounded historical Phase 3 stronger Gemini structured_api m0_naive_m6 trust_accuracy.",
+      "finding": "historical_structured_api_diagnostic",
+      "metric": "trust_accuracy",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "source_artifacts": [
+        "outputs/phase_3_minimal/runs.jsonl"
+      ],
+      "tool_class": "structured_api"
+    }
+  ],
+  "generated_by": "scripts/paper/audit_claims.py"
+}

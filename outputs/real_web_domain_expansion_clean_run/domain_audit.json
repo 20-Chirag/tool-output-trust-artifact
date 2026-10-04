@@ -1,0 +1,557 @@
+{
+  "domain_counts": {
+    "api.slack.com": 3,
+    "cloud.google.com": 4,
+    "developer.mozilla.org": 2,
+    "developers.cloudflare.com": 1,
+    "docs.aws.amazon.com": 1,
+    "docs.docker.com": 1,
+    "docs.github.com": 2,
+    "docs.python.org": 2,
+    "docs.stripe.com": 2,
+    "git-scm.com": 2,
+    "kingcounty.gov": 2,
+    "kubernetes.io": 2,
+    "learn.microsoft.com": 1,
+    "libraries.mit.edu": 3,
+    "nodejs.org": 2,
+    "numpy.org": 3,
+    "pandas.pydata.org": 2,
+    "science.nasa.gov": 2,
+    "shopify.dev": 2,
+    "support.apple.com": 2,
+    "tfl.gov.uk": 1,
+    "www.airnow.gov": 1,
+    "www.bart.gov": 1,
+    "www.berkeley.edu": 2,
+    "www.caltech.edu": 2,
+    "www.cam.ac.uk": 2,
+    "www.cdc.gov": 2,
+    "www.columbia.edu": 1,
+    "www.fda.gov": 2,
+    "www.federalreserve.gov": 2,
+    "www.harvard.edu": 2,
+    "www.loc.gov": 1,
+    "www.metro.net": 3,
+    "www.mta.info": 2,
+    "www.nhc.noaa.gov": 3,
+    "www.njtransit.com": 2,
+    "www.nps.gov": 3,
+    "www.ox.ac.uk": 2,
+    "www.postgresql.org": 2,
+    "www.princeton.edu": 3,
+    "www.septa.org": 1,
+    "www.si.edu": 1,
+    "www.soundtransit.org": 3,
+    "www.sqlite.org": 2,
+    "www.stanford.edu": 2,
+    "www.transitchicago.com": 3,
+    "www.twilio.com": 2,
+    "www.usgs.gov": 2,
+    "www.wmata.com": 2,
+    "www.yale.edu": 2
+  },
+  "example_org_url_count": 0,
+  "examples": {
+    "api.slack.com": [
+      {
+        "scenario_id": "domain-web-search-034",
+        "url": "https://api.slack.com/messaging/webhooks"
+      },
+      {
+        "scenario_id": "domain-web-search-080",
+        "url": "https://api.slack.com/messaging/webhooks"
+      },
+      {
+        "scenario_id": "domain-web-search-084",
+        "url": "https://api.slack.com/messaging/webhooks"
+      }
+    ],
+    "cloud.google.com": [
+      {
+        "scenario_id": "domain-web-search-037",
+        "url": "https://cloud.google.com/pubsub/docs/overview"
+      },
+      {
+        "scenario_id": "domain-web-search-083",
+        "url": "https://cloud.google.com/pubsub/docs/overview"
+      },
+      {
+        "scenario_id": "domain-web-search-086",
+        "url": "https://cloud.google.com/pubsub/docs/overview"
+      }
+    ],
+    "developer.mozilla.org": [
+      {
+        "scenario_id": "domain-web-search-001",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+      },
+      {
+        "scenario_id": "domain-web-search-051",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+      }
+    ],
+    "developers.cloudflare.com": [
+      {
+        "scenario_id": "domain-web-search-033",
+        "url": "https://developers.cloudflare.com/1.1.1.1/"
+      }
+    ],
+    "docs.aws.amazon.com": [
+      {
+        "scenario_id": "domain-web-search-030",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+      }
+    ],
+    "docs.docker.com": [
+      {
+        "scenario_id": "domain-web-search-005",
+        "url": "https://docs.docker.com/compose/how-tos/services/"
+      }
+    ],
+    "docs.github.com": [
+      {
+        "scenario_id": "domain-web-search-032",
+        "url": "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions"
+      },
+      {
+        "scenario_id": "domain-web-search-082",
+        "url": "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions"
+      }
+    ],
+    "docs.python.org": [
+      {
+        "scenario_id": "domain-web-search-000",
+        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+      },
+      {
+        "scenario_id": "domain-web-search-050",
+        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+      }
+    ],
+    "docs.stripe.com": [
+      {
+        "scenario_id": "domain-web-search-031",
+        "url": "https://docs.stripe.com/api/authentication"
+      },
+      {
+        "scenario_id": "domain-web-search-081",
+        "url": "https://docs.stripe.com/api/authentication"
+      }
+    ],
+    "git-scm.com": [
+      {
+        "scenario_id": "domain-web-search-004",
+        "url": "https://git-scm.com/docs/git-clone"
+      },
+      {
+        "scenario_id": "domain-web-search-054",
+        "url": "https://git-scm.com/docs/git-clone"
+      }
+    ],
+    "kingcounty.gov": [
+      {
+        "scenario_id": "domain-web-search-049",
+        "url": "https://kingcounty.gov/en/dept/metro/fares-and-payment/ways-to-pay/orca-cards"
+      },
+      {
+        "scenario_id": "domain-web-search-099",
+        "url": "https://kingcounty.gov/en/dept/metro/fares-and-payment/ways-to-pay/orca-cards"
+      }
+    ],
+    "kubernetes.io": [
+      {
+        "scenario_id": "domain-web-search-002",
+        "url": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+      },
+      {
+        "scenario_id": "domain-web-search-055",
+        "url": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+      }
+    ],
+    "learn.microsoft.com": [
+      {
+        "scenario_id": "domain-web-search-036",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+      }
+    ],
+    "libraries.mit.edu": [
+      {
+        "scenario_id": "domain-web-search-023",
+        "url": "https://libraries.mit.edu/mithistory/institute/origins/"
+      },
+      {
+        "scenario_id": "domain-web-search-062",
+        "url": "https://libraries.mit.edu/mithistory/institute/origins/"
+      },
+      {
+        "scenario_id": "domain-web-search-073",
+        "url": "https://libraries.mit.edu/mithistory/institute/origins/"
+      }
+    ],
+    "nodejs.org": [
+      {
+        "scenario_id": "domain-web-search-009",
+        "url": "https://nodejs.org/api/events.html"
+      },
+      {
+        "scenario_id": "domain-web-search-059",
+        "url": "https://nodejs.org/api/events.html"
+      }
+    ],
+    "numpy.org": [
+      {
+        "scenario_id": "domain-web-search-007",
+        "url": "https://numpy.org/doc/stable/reference/arrays.ndarray.html"
+      },
+      {
+        "scenario_id": "domain-web-search-057",
+        "url": "https://numpy.org/doc/stable/reference/arrays.ndarray.html"
+      },
+      {
+        "scenario_id": "domain-web-search-058",
+        "url": "https://numpy.org/doc/stable/reference/arrays.ndarray.html"
+      }
+    ],
+    "pandas.pydata.org": [
+      {
+        "scenario_id": "domain-web-search-008",
+        "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"
+      },
+      {
+        "scenario_id": "domain-web-search-052",
+        "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"
+      }
+    ],
+    "science.nasa.gov": [
+      {
+        "scenario_id": "domain-web-search-010",
+        "url": "https://science.nasa.gov/mars/facts/"
+      },
+      {
+        "scenario_id": "domain-web-search-060",
+        "url": "https://science.nasa.gov/mars/facts/"
+      }
+    ],
+    "shopify.dev": [
+      {
+        "scenario_id": "domain-web-search-039",
+        "url": "https://shopify.dev/docs/api/admin-graphql"
+      },
+      {
+        "scenario_id": "domain-web-search-089",
+        "url": "https://shopify.dev/"
+      }
+    ],
+    "support.apple.com": [
+      {
+        "scenario_id": "domain-web-search-038",
+        "url": "https://support.apple.com/en-us/101593"
+      },
+      {
+        "scenario_id": "domain-web-search-088",
+        "url": "https://support.apple.com/en-us/101593"
+      }
+    ],
+    "tfl.gov.uk": [
+      {
+        "scenario_id": "domain-web-search-048",
+        "url": "https://tfl.gov.uk/fares/how-to-pay-and-where-to-buy-tickets-and-oyster/pay-as-you-go/contactless-and-oyster"
+      }
+    ],
+    "www.airnow.gov": [
+      {
+        "scenario_id": "domain-web-search-015",
+        "url": "https://www.airnow.gov/aqi/aqi-basics/"
+      }
+    ],
+    "www.bart.gov": [
+      {
+        "scenario_id": "domain-web-search-042",
+        "url": "https://www.bart.gov/tickets"
+      }
+    ],
+    "www.berkeley.edu": [
+      {
+        "scenario_id": "domain-web-search-022",
+        "url": "https://www.berkeley.edu/about/history-discoveries/"
+      },
+      {
+        "scenario_id": "domain-web-search-072",
+        "url": "https://www.berkeley.edu/about/history-discoveries/"
+      }
+    ],
+    "www.caltech.edu": [
+      {
+        "scenario_id": "domain-web-search-024",
+        "url": "https://www.caltech.edu/about/history"
+      },
+      {
+        "scenario_id": "domain-web-search-071",
+        "url": "https://www.caltech.edu/about/history"
+      }
+    ],
+    "www.cam.ac.uk": [
+      {
+        "scenario_id": "domain-web-search-028",
+        "url": "https://www.cam.ac.uk/about-the-university"
+      },
+      {
+        "scenario_id": "domain-web-search-078",
+        "url": "https://www.cam.ac.uk/about-the-university"
+      }
+    ],
+    "www.cdc.gov": [
+      {
+        "scenario_id": "domain-web-search-013",
+        "url": "https://www.cdc.gov/clean-hands/about/"
+      },
+      {
+        "scenario_id": "domain-web-search-063",
+        "url": "https://www.cdc.gov/clean-hands/about/"
+      }
+    ],
+    "www.columbia.edu": [
+      {
+        "scenario_id": "domain-web-search-027",
+        "url": "https://www.columbia.edu/content/history"
+      }
+    ],
+    "www.fda.gov": [
+      {
+        "scenario_id": "domain-web-search-016",
+        "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies"
+      },
+      {
+        "scenario_id": "domain-web-search-066",
+        "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies"
+      }
+    ],
+    "www.federalreserve.gov": [
+      {
+        "scenario_id": "domain-web-search-017",
+        "url": "https://www.federalreserve.gov/aboutthefed/fract.htm"
+      },
+      {
+        "scenario_id": "domain-web-search-067",
+        "url": "https://www.federalreserve.gov/aboutthefed/fract.htm"
+      }
+    ],
+    "www.harvard.edu": [
+      {
+        "scenario_id": "domain-web-search-020",
+        "url": "https://www.harvard.edu/about/history/"
+      },
+      {
+        "scenario_id": "domain-web-search-070",
+        "url": "https://www.harvard.edu/about/history/"
+      }
+    ],
+    "www.loc.gov": [
+      {
+        "scenario_id": "domain-web-search-012",
+        "url": "https://www.loc.gov/about/history-of-the-library/"
+      }
+    ],
+    "www.metro.net": [
+      {
+        "scenario_id": "domain-web-search-043",
+        "url": "https://www.metro.net/riding/fares/tap/"
+      },
+      {
+        "scenario_id": "domain-web-search-092",
+        "url": "https://www.metro.net/riding/fares/tap/"
+      },
+      {
+        "scenario_id": "domain-web-search-093",
+        "url": "https://www.metro.net/riding/fares/tap/"
+      }
+    ],
+    "www.mta.info": [
+      {
+        "scenario_id": "domain-web-search-040",
+        "url": "https://www.mta.info/fares-tolls"
+      },
+      {
+        "scenario_id": "domain-web-search-090",
+        "url": "https://www.mta.info/fares-tolls"
+      }
+    ],
+    "www.nhc.noaa.gov": [
+      {
+        "scenario_id": "domain-web-search-014",
+        "url": "https://www.nhc.noaa.gov/aboutsshws.php"
+      },
+      {
+        "scenario_id": "domain-web-search-064",
+        "url": "https://www.nhc.noaa.gov/aboutsshws.php"
+      },
+      {
+        "scenario_id": "domain-web-search-065",
+        "url": "https://www.nhc.noaa.gov/aboutsshws.php"
+      }
+    ],
+    "www.njtransit.com": [
+      {
+        "scenario_id": "domain-web-search-046",
+        "url": "https://www.njtransit.com/mobileapp"
+      },
+      {
+        "scenario_id": "domain-web-search-096",
+        "url": "https://www.njtransit.com/mobileapp"
+      }
+    ],
+    "www.nps.gov": [
+      {
+        "scenario_id": "domain-web-search-011",
+        "url": "https://www.nps.gov/articles/quick-nps-history.htm"
+      },
+      {
+        "scenario_id": "domain-web-search-061",
+        "url": "https://www.nps.gov/articles/quick-nps-history.htm"
+      },
+      {
+        "scenario_id": "domain-web-search-068",
+        "url": "https://www.nps.gov/articles/quick-nps-history.htm"
+      }
+    ],
+    "www.ox.ac.uk": [
+      {
+        "scenario_id": "domain-web-search-029",
+        "url": "https://www.ox.ac.uk/about/organisation/history"
+      },
+      {
+        "scenario_id": "domain-web-search-079",
+        "url": "https://www.ox.ac.uk/about/organisation/history"
+      }
+    ],
+    "www.postgresql.org": [
+      {
+        "scenario_id": "domain-web-search-003",
+        "url": "https://www.postgresql.org/docs/current/runtime-config-connection.html"
+      },
+      {
+        "scenario_id": "domain-web-search-053",
+        "url": "https://www.postgresql.org/docs/current/runtime-config-connection.html"
+      }
+    ],
+    "www.princeton.edu": [
+      {
+        "scenario_id": "domain-web-search-025",
+        "url": "https://www.princeton.edu/meet-princeton/history"
+      },
+      {
+        "scenario_id": "domain-web-search-075",
+        "url": "https://www.princeton.edu/meet-princeton/history"
+      },
+      {
+        "scenario_id": "domain-web-search-077",
+        "url": "https://www.princeton.edu/meet-princeton/history"
+      }
+    ],
+    "www.septa.org": [
+      {
+        "scenario_id": "domain-web-search-045",
+        "url": "https://www.septa.org/fares/key/"
+      }
+    ],
+    "www.si.edu": [
+      {
+        "scenario_id": "domain-web-search-018",
+        "url": "https://www.si.edu/about/history"
+      }
+    ],
+    "www.soundtransit.org": [
+      {
+        "scenario_id": "domain-web-search-047",
+        "url": "https://www.soundtransit.org/ride-with-us/how-to-pay/fares"
+      },
+      {
+        "scenario_id": "domain-web-search-097",
+        "url": "https://www.soundtransit.org/ride-with-us/how-to-pay/fares"
+      },
+      {
+        "scenario_id": "domain-web-search-098",
+        "url": "https://www.soundtransit.org/ride-with-us/how-to-pay/fares"
+      }
+    ],
+    "www.sqlite.org": [
+      {
+        "scenario_id": "domain-web-search-006",
+        "url": "https://www.sqlite.org/copyright.html"
+      },
+      {
+        "scenario_id": "domain-web-search-056",
+        "url": "https://www.sqlite.org/copyright.html"
+      }
+    ],
+    "www.stanford.edu": [
+      {
+        "scenario_id": "domain-web-search-021",
+        "url": "https://www.stanford.edu/about/history/"
+      },
+      {
+        "scenario_id": "domain-web-search-074",
+        "url": "https://www.stanford.edu/about/history/"
+      }
+    ],
+    "www.transitchicago.com": [
+      {
+        "scenario_id": "domain-web-search-044",
+        "url": "https://www.transitchicago.com/ventra/"
+      },
+      {
+        "scenario_id": "domain-web-search-094",
+        "url": "https://www.transitchicago.com/ventra/"
+      },
+      {
+        "scenario_id": "domain-web-search-095",
+        "url": "https://www.transitchicago.com/ventra/"
+      }
+    ],
+    "www.twilio.com": [
+      {
+        "scenario_id": "domain-web-search-035",
+        "url": "https://www.twilio.com/docs/messaging"
+      },
+      {
+        "scenario_id": "domain-web-search-085",
+        "url": "https://www.twilio.com/docs/messaging"
+      }
+    ],
+    "www.usgs.gov": [
+      {
+        "scenario_id": "domain-web-search-019",
+        "url": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types"
+      },
+      {
+        "scenario_id": "domain-web-search-069",
+        "url": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types"
+      }
+    ],
+    "www.wmata.com": [
+      {
+        "scenario_id": "domain-web-search-041",
+        "url": "https://www.wmata.com/fares/basic.cfm"
+      },
+      {
+        "scenario_id": "domain-web-search-091",
+        "url": "https://www.wmata.com/fares/basic.cfm"
+      }
+    ],
+    "www.yale.edu": [
+      {
+        "scenario_id": "domain-web-search-026",
+        "url": "https://www.yale.edu/about-yale"
+      },
+      {
+        "scenario_id": "domain-web-search-076",
+        "url": "https://www.yale.edu/about-yale"
+      }
+    ]
+  },
+  "scenario_count": 100,
+  "top_domain": "cloud.google.com",
+  "top_domain_count": 4,
+  "top_domain_fraction": 0.04
+}

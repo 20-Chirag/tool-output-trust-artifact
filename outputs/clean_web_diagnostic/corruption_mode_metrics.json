@@ -1,0 +1,773 @@
+{
+  "analysis": "clean broader-web silent acceptance by corruption mode",
+  "bootstrap_resamples": 10000,
+  "interval_policy": "Wilson 95% intervals are paper-facing for single proportions. Empirical source-capture bootstrap intervals are retained as diagnostic fields and may degenerate for all-zero cells.",
+  "rows": [
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.7894736842105263,
+        "capture_bootstrap_ci_low": 0.3684210526315789,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7685810871754576,
+        "ci_low": 0.3627590353425504,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5789473684210527,
+        "numerator": 11
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.5789473684210527,
+        "capture_bootstrap_ci_low": 0.15789473684210525,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.5896046683519692,
+        "ci_low": 0.19149512745135075,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.3684210526315789,
+        "numerator": 7
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.7368421052631579,
+        "capture_bootstrap_ci_low": 0.3157894736842105,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7267019483882042,
+        "ci_low": 0.3170780924511316,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5263157894736842,
+        "numerator": 10
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.631578947368421,
+        "capture_bootstrap_ci_low": 0.21052631578947367,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.6372409646574496,
+        "ci_low": 0.23141891282454238,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.42105263157894735,
+        "numerator": 8
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.7368421052631579,
+        "capture_bootstrap_ci_low": 0.3157894736842105,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7267019483882042,
+        "ci_low": 0.3170780924511316,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5263157894736842,
+        "numerator": 10
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-2.5-flash",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.1875,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.28328737570298945,
+        "ci_low": 0.01111934476464252,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0625,
+        "numerator": 1
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.3157894736842105,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.37565475270329074,
+        "ci_low": 0.05520471638534141,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.15789473684210525,
+        "numerator": 3
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.15789473684210525,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.24638731166898786,
+        "ci_low": 0.009351994062300362,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.05263157894736842,
+        "numerator": 1
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.3157894736842105,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.37565475270329074,
+        "ci_low": 0.05520471638534141,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.15789473684210525,
+        "numerator": 3
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.15789473684210525,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.24638731166898786,
+        "ci_low": 0.009351994062300362,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.05263157894736842,
+        "numerator": 1
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.3157894736842105,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.37565475270329074,
+        "ci_low": 0.05520471638534141,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.15789473684210525,
+        "numerator": 3
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gemini-3.1-pro-preview",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.1875,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.28328737570298945,
+        "ci_low": 0.01111934476464252,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0625,
+        "numerator": 1
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.7894736842105263,
+        "capture_bootstrap_ci_low": 0.3684210526315789,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.7685810871754576,
+        "ci_low": 0.3627590353425504,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.5789473684210527,
+        "numerator": 11
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "baseline",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.5263157894736842,
+        "capture_bootstrap_ci_low": 0.10526315789473684,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.5398959232467253,
+        "ci_low": 0.1536437908779228,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.3157894736842105,
+        "numerator": 6
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m2",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.47368421052631576,
+        "capture_bootstrap_ci_low": 0.10526315789473684,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.487915508978151,
+        "ci_low": 0.11806412346782508,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.2631578947368421,
+        "numerator": 5
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m0_naive_m6",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.1936076805344365,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.42105263157894735,
+        "capture_bootstrap_ci_low": 0.05263157894736842,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.43334278443814167,
+        "ci_low": 0.08507676632916253,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.21052631578947367,
+        "numerator": 4
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m2_structured_skeptic",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    },
+    {
+      "corruption_mode": "partial_field_omission",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.1875,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 16,
+        "ci_high": 0.28328737570298945,
+        "ci_low": 0.01111934476464252,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 16,
+        "estimate": 0.0625,
+        "numerator": 1
+      }
+    },
+    {
+      "corruption_mode": "plausible_hallucinated_content",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.47368421052631576,
+        "capture_bootstrap_ci_low": 0.10526315789473684,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 19,
+        "ci_high": 0.487915508978151,
+        "ci_low": 0.11806412346782508,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 19,
+        "estimate": 0.2631578947368421,
+        "numerator": 5
+      }
+    },
+    {
+      "corruption_mode": "wrong_user_or_wrong_entity",
+      "model_name": "gpt-5.4-mini",
+      "policy_name": "m6_checklist",
+      "silent_acceptance": {
+        "capture_bootstrap_ci_high": 0.0,
+        "capture_bootstrap_ci_low": 0.0,
+        "capture_bootstrap_note": "Empirical percentile bootstrap over the observed capture rows; retained for audit, not paper-facing.",
+        "capture_clusters": 15,
+        "ci_high": 0.20388330103584862,
+        "ci_low": 0.0,
+        "ci_method": "Wilson 95% interval",
+        "denominator": 15,
+        "estimate": 0.0,
+        "numerator": 0
+      }
+    }
+  ],
+  "seed": 20260722
+}

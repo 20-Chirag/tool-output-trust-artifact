@@ -1,0 +1,344 @@
+[
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 1,
+      "rate": 0.0625
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 16,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 16,
+      "numerator": 1,
+      "rate": 0.0625
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": -0.26315789473684215,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": -0.10526315789473689,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 9,
+      "rate": 0.47368421052631576
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 19,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 19,
+      "numerator": 11,
+      "rate": 0.5789473684210527
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 15,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 16,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": -0.05263157894736842,
+    "ci_low": -0.42105263157894735,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": -0.21052631578947367,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 19,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 19,
+      "numerator": 4,
+      "rate": 0.21052631578947367
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 15,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": -0.1875,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": -0.0625,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 16,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 16,
+      "numerator": 1,
+      "rate": 0.0625
+    }
+  },
+  {
+    "ci_high": -0.10526315789473684,
+    "ci_low": -0.47368421052631576,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": -0.2631578947368421,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 19,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 19,
+      "numerator": 5,
+      "rate": 0.2631578947368421
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gpt-5.4-mini",
+    "n_scenarios": 15,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 16,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 11,
+      "rate": 0.5789473684210527
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 19,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 19,
+      "numerator": 11,
+      "rate": 0.5789473684210527
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 15,
+    "policy_name": "baseline",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 16,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": -0.2631578947368421,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": -0.10526315789473684,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 6,
+      "rate": 0.3157894736842105
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 19,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 19,
+      "numerator": 8,
+      "rate": 0.42105263157894735
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 15,
+    "policy_name": "m2_structured_skeptic",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "partial_field_omission",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 16,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 16,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": -0.1578947368421053,
+    "corruption_mode": "plausible_hallucinated_content",
+    "delta_fixture_minus_real": -0.05263157894736842,
+    "fixture": {
+      "denominator": 19,
+      "numerator": 9,
+      "rate": 0.47368421052631576
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 19,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 19,
+      "numerator": 10,
+      "rate": 0.5263157894736842
+    }
+  },
+  {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "corruption_mode": "wrong_user_or_wrong_entity",
+    "delta_fixture_minus_real": 0.0,
+    "fixture": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    },
+    "model_name": "gemini-2.5-flash",
+    "n_scenarios": 15,
+    "policy_name": "m6_checklist",
+    "real": {
+      "denominator": 15,
+      "numerator": 0,
+      "rate": 0.0
+    }
+  }
+]

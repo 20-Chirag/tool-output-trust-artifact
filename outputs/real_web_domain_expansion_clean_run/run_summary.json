@@ -1,0 +1,38 @@
+{
+  "attempted_responses_this_run": 1502,
+  "budget_cap_inr_approx": 415.0,
+  "budget_cap_usd": 5.0,
+  "cache_path": "outputs/real_web_domain_expansion_clean_run/cache.jsonl",
+  "duplicate_cache_lines": 2,
+  "events_cached_total": 1500,
+  "events_expected": 1500,
+  "events_parsed_total": 1500,
+  "invalid_responses_this_run": 0,
+  "models": [
+    "gpt-5.4-mini",
+    "gemini-2.5-flash",
+    "gemini-3.1-pro-preview"
+  ],
+  "output_path": "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+  "paid_run_authorized": true,
+  "phase": "real_web_domain_expansion",
+  "policies": [
+    "baseline",
+    "m6_checklist",
+    "m2_structured_skeptic",
+    "m0_naive_m6",
+    "m0_naive_m2"
+  ],
+  "projected_inr_approx": 402.6,
+  "projected_usd": 4.850628,
+  "scenario_path": "outputs/real_web_domain_expansion/scenarios_candidate.jsonl",
+  "scenarios": 100,
+  "spent_inr_all_cache_lines_approx": 191.7,
+  "spent_inr_approx": 191.7,
+  "spent_inr_unique_latest_approx": 190.72,
+  "spent_usd": 2.309647,
+  "spent_usd_all_cache_lines": 2.309647,
+  "spent_usd_unique_latest": 2.297803,
+  "stopped": null,
+  "written_events_this_run": 1500
+}

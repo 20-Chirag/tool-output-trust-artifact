@@ -1,0 +1,24 @@
+{
+  "clean_output_preserved": true,
+  "corruption_mode_counts": {
+    "none": 50,
+    "partial_field_omission": 16,
+    "plausible_hallucinated_content": 19,
+    "wrong_user_or_wrong_entity": 15
+  },
+  "design": "matched URL-host-only fixture arm",
+  "fixture_host": "example.org",
+  "fixture_url_count": 100,
+  "only_changed_model_visible_field": "tool_output.url",
+  "output_path": "outputs/url_fixture_ablation/scenarios_fixture.jsonl",
+  "paid_model_calls_made": false,
+  "reliability_counts": {
+    "reliable": 50,
+    "unreliable": 50
+  },
+  "scenario_count": 100,
+  "scenario_ids_preserved": true,
+  "source_path": "outputs/real_web_domain_expansion/scenarios_candidate.jsonl",
+  "source_sha256": "d1304ea901fcc8a15c8dc26f6f2c6ac4873bfae78a2c265f11e0bec0314e706c",
+  "url_component_changed": "host only"
+}

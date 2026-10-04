@@ -1,0 +1,377 @@
+{
+  "analysis": "paired policy deltas within the clean broader-web run",
+  "bootstrap_resamples": 10000,
+  "comparisons": [
+    {
+      "comparison_policy": "m2_structured_skeptic",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "delta_comparison_minus_baseline": 0.0,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.22,
+            "numerator": 11
+          },
+          "ci_high": 0.0,
+          "ci_low": -0.13999999999999999,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.16,
+            "numerator": 8
+          },
+          "delta_comparison_minus_baseline": -0.06,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.89,
+            "numerator": 89
+          },
+          "ci_high": 0.06999999999999995,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.92,
+            "numerator": 92
+          },
+          "delta_comparison_minus_baseline": 0.030000000000000027,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gemini-2.5-flash",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    },
+    {
+      "comparison_policy": "m6_checklist",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "delta_comparison_minus_baseline": 0.0,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.22,
+            "numerator": 11
+          },
+          "ci_high": 0.0,
+          "ci_low": -0.060000000000000026,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.2,
+            "numerator": 10
+          },
+          "delta_comparison_minus_baseline": -0.01999999999999999,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.89,
+            "numerator": 89
+          },
+          "ci_high": 0.030000000000000027,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.9,
+            "numerator": 90
+          },
+          "delta_comparison_minus_baseline": 0.010000000000000009,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gemini-2.5-flash",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    },
+    {
+      "comparison_policy": "m2_structured_skeptic",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.18,
+          "ci_low": 0.02,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.1,
+            "numerator": 5
+          },
+          "delta_comparison_minus_baseline": 0.1,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.08,
+            "numerator": 4
+          },
+          "ci_high": 0.0,
+          "ci_low": -0.14,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.02,
+            "numerator": 1
+          },
+          "delta_comparison_minus_baseline": -0.06,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.96,
+            "numerator": 96
+          },
+          "ci_high": 0.029999999999999916,
+          "ci_low": -0.06999999999999995,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.94,
+            "numerator": 94
+          },
+          "delta_comparison_minus_baseline": -0.020000000000000018,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gemini-3.1-pro-preview",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    },
+    {
+      "comparison_policy": "m6_checklist",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "delta_comparison_minus_baseline": 0.0,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.08,
+            "numerator": 4
+          },
+          "ci_high": 0.04000000000000001,
+          "ci_low": -0.08000000000000002,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.06,
+            "numerator": 3
+          },
+          "delta_comparison_minus_baseline": -0.020000000000000004,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.96,
+            "numerator": 96
+          },
+          "ci_high": 0.04999999999999993,
+          "ci_low": -0.020000000000000018,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.97,
+            "numerator": 97
+          },
+          "delta_comparison_minus_baseline": 0.010000000000000009,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gemini-3.1-pro-preview",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    },
+    {
+      "comparison_policy": "m2_structured_skeptic",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.06,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.02,
+            "numerator": 1
+          },
+          "delta_comparison_minus_baseline": 0.02,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.24,
+            "numerator": 12
+          },
+          "ci_high": -0.060000000000000005,
+          "ci_low": -0.26,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.08,
+            "numerator": 4
+          },
+          "delta_comparison_minus_baseline": -0.15999999999999998,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.88,
+            "numerator": 88
+          },
+          "ci_high": 0.13,
+          "ci_low": 0.019999999999999907,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.95,
+            "numerator": 95
+          },
+          "delta_comparison_minus_baseline": 0.06999999999999995,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gpt-5.4-mini",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    },
+    {
+      "comparison_policy": "m6_checklist",
+      "metrics": {
+        "false_defer_or_verify": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.0,
+            "numerator": 0
+          },
+          "ci_high": 0.06,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.02,
+            "numerator": 1
+          },
+          "delta_comparison_minus_baseline": 0.02,
+          "paired_capture_clusters": 50
+        },
+        "silent_acceptance": {
+          "baseline": {
+            "denominator": 50,
+            "estimate": 0.24,
+            "numerator": 12
+          },
+          "ci_high": -0.01999999999999999,
+          "ci_low": -0.22000000000000003,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 50,
+            "estimate": 0.12,
+            "numerator": 6
+          },
+          "delta_comparison_minus_baseline": -0.12,
+          "paired_capture_clusters": 50
+        },
+        "trust_accuracy": {
+          "baseline": {
+            "denominator": 100,
+            "estimate": 0.88,
+            "numerator": 88
+          },
+          "ci_high": 0.09999999999999998,
+          "ci_low": 0.0,
+          "ci_method": "paired source-capture percentile bootstrap",
+          "comparison": {
+            "denominator": 100,
+            "estimate": 0.93,
+            "numerator": 93
+          },
+          "delta_comparison_minus_baseline": 0.050000000000000044,
+          "paired_capture_clusters": 50
+        }
+      },
+      "model_name": "gpt-5.4-mini",
+      "n_capture_clusters": 50,
+      "n_scenarios": 100,
+      "reference_policy": "baseline"
+    }
+  ],
+  "integrity": {
+    "clean_examples_last_modified": 1785148612.2211132,
+    "clean_examples_path": "outputs\\real_web_domain_expansion_clean_run\\examples.json",
+    "duplicate_parsed_cells": 0,
+    "invalid_actions": 0,
+    "parsed_rows": 1500,
+    "source_captures": 50,
+    "unique_model_policy_scenario_cells": 1500
+  },
+  "resampling_unit": "raw source capture",
+  "seed": 20260722
+}
