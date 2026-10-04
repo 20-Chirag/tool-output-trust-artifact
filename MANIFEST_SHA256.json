@@ -1,6 +1,6 @@
 {
     "schema_version":  1,
-    "file_count":  110,
+    "file_count":  111,
     "files":  [
                   {
                       "path":  "src/trustbench/data/schemas.py",
@@ -278,6 +278,16 @@
                       "sha256":  "c3d8c10f8468db14e5188ddc7bcc61db00f3dfa680c155e01ab369e8d70807c2"
                   },
                   {
+                      "path":  "paper/agent_tool_trust/figures/url_cue_ablation.svg",
+                      "bytes":  24167,
+                      "sha256":  "6fcb1fbb224e82547f29935ab5b0cdc11c72ed934604ab5ce686378adc8070fa"
+                  },
+                  {
+                      "path":  "outputs/paper_claim_audit/claim_ledger.json",
+                      "bytes":  76748,
+                      "sha256":  "c71f77445843f790bf887a0eda3df9a8d6c90b88ae31769f18719503165b2273"
+                  },
+                  {
                       "path":  "outputs/paper_qualitative_evidence/evidence.json",
                       "bytes":  8312,
                       "sha256":  "22629225605f39fe8b6db2a76c6ff23220c3575710bb484f943317a525dbe6e7"
@@ -288,9 +298,9 @@
                       "sha256":  "17b5a0bf4cee3ccac3daee0454ff902c0be93ab484efa3fe5f18f56470073878"
                   },
                   {
-                      "path":  "outputs/phase_2/scenarios_candidate.jsonl",
-                      "bytes":  204539,
-                      "sha256":  "fa26bca0ab9d57ca39689b2c17b8622c1cf8e43e6921feb452ca915d155adf33"
+                      "path":  "outputs/clean_web_diagnostic/omission_construct_audit.json",
+                      "bytes":  4183,
+                      "sha256":  "da2ea1020d423a5d86d9e7dd52ddcb92e650c0180d46f4b46ea7863f0ac0f04a"
                   },
                   {
                       "path":  "outputs/clean_web_diagnostic/paired_policy_deltas.json",
@@ -303,14 +313,14 @@
                       "sha256":  "7057f5baf9d967b5994a931736aa71e2d129664ed8a1de1b9d91466d76e7841e"
                   },
                   {
-                      "path":  "outputs/paper_claim_audit/claim_ledger.json",
-                      "bytes":  76748,
-                      "sha256":  "c71f77445843f790bf887a0eda3df9a8d6c90b88ae31769f18719503165b2273"
+                      "path":  "outputs/phase_2/scenarios_candidate.jsonl",
+                      "bytes":  204539,
+                      "sha256":  "fa26bca0ab9d57ca39689b2c17b8622c1cf8e43e6921feb452ca915d155adf33"
                   },
                   {
-                      "path":  "outputs/phase_2_prompt_audit/m6_mental_math_audit.json",
-                      "bytes":  9888,
-                      "sha256":  "0eb64fe55288a69f782c997b6a9352c9ae92e4dc357b987197357928d5a192a9"
+                      "path":  "outputs/phase_b/finding_robustness.json",
+                      "bytes":  44780,
+                      "sha256":  "ac1586d3b7002ba413c36e58a36c9b96ae0fa2aee51f2d5e2a5709aeb0edb081"
                   },
                   {
                       "path":  "outputs/phase_b/runs.jsonl",
@@ -323,9 +333,9 @@
                       "sha256":  "25127dccb64866857307704df41d34dd1855600e8ee1535fae3b86038811d07b"
                   },
                   {
-                      "path":  "outputs/real_web_domain_expansion/inspection_note.md",
-                      "bytes":  4594,
-                      "sha256":  "72e92d19f1ab648d762987634f009d40e6cc1c042112e2411bb2b7f22f77fa0d"
+                      "path":  "outputs/phase_2_prompt_audit/m6_mental_math_audit.json",
+                      "bytes":  9888,
+                      "sha256":  "0eb64fe55288a69f782c997b6a9352c9ae92e4dc357b987197357928d5a192a9"
                   },
                   {
                       "path":  "outputs/phase_3_minimal/finding_robustness.json",
@@ -338,14 +348,14 @@
                       "sha256":  "2143e9fb625887f66c1130afeb84be7e4b002eede93eecc653c960942ba32ca8"
                   },
                   {
-                      "path":  "outputs/phase_b/finding_robustness.json",
-                      "bytes":  44780,
-                      "sha256":  "ac1586d3b7002ba413c36e58a36c9b96ae0fa2aee51f2d5e2a5709aeb0edb081"
+                      "path":  "outputs/clean_web_diagnostic/gpt_silent_acceptance_cases.json",
+                      "bytes":  10732,
+                      "sha256":  "fb0ddb9f20ccf6bb99780d78b8018cddd7ddeb3208a061d1c098da9adc6462fb"
                   },
                   {
-                      "path":  "outputs/clean_web_diagnostic/omission_construct_audit.json",
-                      "bytes":  4183,
-                      "sha256":  "da2ea1020d423a5d86d9e7dd52ddcb92e650c0180d46f4b46ea7863f0ac0f04a"
+                      "path":  "CITATION.cff",
+                      "bytes":  393,
+                      "sha256":  "ce42e7db768fe962527622210146fc3dc6f907528de91a13f8ecb037140664b9"
                   },
                   {
                       "path":  "pyproject.toml",
@@ -358,9 +368,9 @@
                       "sha256":  "fe99385ea15603d4f4254f291c77f3125438fa29c7d9071d7a027ef0ad23cd73"
                   },
                   {
-                      "path":  "uv.lock",
-                      "bytes":  316687,
-                      "sha256":  "62b9dbb9308bbccfa5b9de5da878d73bfbae180db5db36ffda5ef411610ae3fc"
+                      "path":  ".gitattributes",
+                      "bytes":  8,
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
                   },
                   {
                       "path":  ".gitignore",
@@ -373,14 +383,14 @@
                       "sha256":  "5ba97f88f80d88c8417990ae1b6db8cbcf96bfc49659d8b5cef8d92c5340f5da"
                   },
                   {
-                      "path":  "CITATION.cff",
-                      "bytes":  393,
-                      "sha256":  "ce42e7db768fe962527622210146fc3dc6f907528de91a13f8ecb037140664b9"
+                      "path":  "uv.lock",
+                      "bytes":  316687,
+                      "sha256":  "62b9dbb9308bbccfa5b9de5da878d73bfbae180db5db36ffda5ef411610ae3fc"
                   },
                   {
-                      "path":  "configs/real_web_domain_expansion.yaml",
-                      "bytes":  1418,
-                      "sha256":  "96e0c159a1f8e1f2e451f1dd11aa301d38e868c0aae798eea5a5ad5a5869fff7"
+                      "path":  "outputs/adjudication/claude_results_2026_07_22/f1_calculator_claude_review.csv",
+                      "bytes":  12419,
+                      "sha256":  "e64fad2ad183e102465411388dde2064c462a9622fd8f1385b53cc7a5bd03b22"
                   },
                   {
                       "path":  "outputs/adjudication/claude_results_2026_07_22/validation_report.json",
@@ -393,9 +403,9 @@
                       "sha256":  "cff9a33d4120fa8b38501bc3a84f5621843fca8a855499a97fff402a4d51524e"
                   },
                   {
-                      "path":  "outputs/clean_web_diagnostic/gpt_silent_acceptance_cases.json",
-                      "bytes":  10732,
-                      "sha256":  "fb0ddb9f20ccf6bb99780d78b8018cddd7ddeb3208a061d1c098da9adc6462fb"
+                      "path":  "configs/real_web_domain_expansion.yaml",
+                      "bytes":  1418,
+                      "sha256":  "96e0c159a1f8e1f2e451f1dd11aa301d38e868c0aae798eea5a5ad5a5869fff7"
                   },
                   {
                       "path":  "configs/url_fixture_ablation.yaml",
@@ -408,14 +418,14 @@
                       "sha256":  "e51d62d2b6f7b8bfc572f567d93e2be8c4f5e0e9605b62bc171f43aade60b7c3"
                   },
                   {
-                      "path":  "outputs/adjudication/claude_results_2026_07_22/f1_calculator_claude_review.csv",
-                      "bytes":  12419,
-                      "sha256":  "e64fad2ad183e102465411388dde2064c462a9622fd8f1385b53cc7a5bd03b22"
+                      "path":  "outputs/real_web_domain_expansion/inspection_note.md",
+                      "bytes":  4594,
+                      "sha256":  "72e92d19f1ab648d762987634f009d40e6cc1c042112e2411bb2b7f22f77fa0d"
                   },
                   {
-                      "path":  "outputs/real_web_domain_expansion/scenarios_candidate.jsonl",
-                      "bytes":  145811,
-                      "sha256":  "4f3ed5ac0cda2154280400a74b5e060d1be3ac27ed8951c92348c3f0c55e030c"
+                      "path":  "outputs/url_fixture_ablation_run/run_summary.json",
+                      "bytes":  1020,
+                      "sha256":  "72b49a7d3d47cd7c300ee81e7dee45e15de4b7d4d68d5a25e52f2996fa703298"
                   },
                   {
                       "path":  "outputs/url_fixture_ablation_run/verdict.json",
@@ -428,9 +438,9 @@
                       "sha256":  "795e1a6cb00e8fa774be06764885dbfbdffe4bc2b0372c9407d2084fdc8b4f90"
                   },
                   {
-                      "path":  "paper/agent_tool_trust/generate_figures.py",
-                      "bytes":  7299,
-                      "sha256":  "35e9d6ca5266bd463dd5013c35b397ed1671abcfac5af84aaedd1e16f94df018"
+                      "path":  "outputs/url_fixture_ablation_run/metrics.json",
+                      "bytes":  4568,
+                      "sha256":  "b767c686176bdb3204ce6ecf32090871a30f69c7409a2202b84b9d41524c3129"
                   },
                   {
                       "path":  "outputs/url_fixture_ablation_run/paired_deltas.json",
@@ -443,14 +453,14 @@
                       "sha256":  "5a34f2b4e47e359490f1fb774303136f1fc6b73083fb7ba24da72b4b50b3c910"
                   },
                   {
-                      "path":  "outputs/url_fixture_ablation_run/run_summary.json",
-                      "bytes":  1020,
-                      "sha256":  "72b49a7d3d47cd7c300ee81e7dee45e15de4b7d4d68d5a25e52f2996fa703298"
+                      "path":  "paper/agent_tool_trust/generate_figures.py",
+                      "bytes":  7299,
+                      "sha256":  "35e9d6ca5266bd463dd5013c35b397ed1671abcfac5af84aaedd1e16f94df018"
                   },
                   {
-                      "path":  "paper/agent_tool_trust/orx_figstyle.py",
-                      "bytes":  21867,
-                      "sha256":  "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9"
+                      "path":  "paper/agent_tool_trust/figures/corruption_modes.svg",
+                      "bytes":  16896,
+                      "sha256":  "fc4bb22a31541e26234443a5cb5464136bf687dd370ded2e5b503007fe702005"
                   },
                   {
                       "path":  "paper/agent_tool_trust/figures/url_cue_ablation.pdf",
@@ -463,9 +473,9 @@
                       "sha256":  "b16f9f1e4ab692d635b51375f4ce1013094bb1e06f77a3f409233cca4cd14503"
                   },
                   {
-                      "path":  "paper/agent_tool_trust/figures/url_cue_ablation.svg",
-                      "bytes":  24167,
-                      "sha256":  "6fcb1fbb224e82547f29935ab5b0cdc11c72ed934604ab5ce686378adc8070fa"
+                      "path":  "paper/agent_tool_trust/orx_figstyle.py",
+                      "bytes":  21867,
+                      "sha256":  "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9"
                   },
                   {
                       "path":  "paper/agent_tool_trust/figures/corruption_modes.pdf",
@@ -478,14 +488,14 @@
                       "sha256":  "034a0ec8d6ca8cf85320397bc3b7060af84749082924b78b1b4527a60f889384"
                   },
                   {
-                      "path":  "paper/agent_tool_trust/figures/corruption_modes.svg",
-                      "bytes":  16896,
-                      "sha256":  "fc4bb22a31541e26234443a5cb5464136bf687dd370ded2e5b503007fe702005"
+                      "path":  "outputs/url_fixture_ablation_run/examples.json",
+                      "bytes":  68190,
+                      "sha256":  "89446016efc574ab4627e6d062a13367495a30147c3d6c033fd19c456014442c"
                   },
                   {
-                      "path":  "outputs/url_fixture_ablation_run/metrics.json",
-                      "bytes":  4568,
-                      "sha256":  "b767c686176bdb3204ce6ecf32090871a30f69c7409a2202b84b9d41524c3129"
+                      "path":  "outputs/real_web_domain_expansion_clean_run/domain_audit.json",
+                      "bytes":  15984,
+                      "sha256":  "e7ea893b31c8b98a1368c2144c3ed287b19c24b7b39581109c8e4f5b60ee59a5"
                   },
                   {
                       "path":  "outputs/real_web_domain_expansion_clean_run/examples.json",
@@ -498,9 +508,9 @@
                       "sha256":  "966a0c3d01915b0788bad71271343fde4357723cf1ca3b2ec5049068965514a4"
                   },
                   {
-                      "path":  "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
-                      "bytes":  998554,
-                      "sha256":  "090c3726eebd0a1d3f0d9db589879dd390cd798720550a61a06708f63dd3c2cf"
+                      "path":  "outputs/real_web_domain_expansion/scenarios_candidate.jsonl",
+                      "bytes":  145811,
+                      "sha256":  "4f3ed5ac0cda2154280400a74b5e060d1be3ac27ed8951c92348c3f0c55e030c"
                   },
                   {
                       "path":  "outputs/real_web_domain_expansion/raw/captures.jsonl",
@@ -513,14 +523,14 @@
                       "sha256":  "1b1e54ae2d78fece358f5b4ce054604e8e4ad652ab4eb6b17ff66430e8d8cbb2"
                   },
                   {
-                      "path":  "outputs/real_web_domain_expansion_clean_run/domain_audit.json",
-                      "bytes":  15984,
-                      "sha256":  "e7ea893b31c8b98a1368c2144c3ed287b19c24b7b39581109c8e4f5b60ee59a5"
+                      "path":  "outputs/real_web_domain_expansion_clean_run/runs.jsonl",
+                      "bytes":  998554,
+                      "sha256":  "090c3726eebd0a1d3f0d9db589879dd390cd798720550a61a06708f63dd3c2cf"
                   },
                   {
-                      "path":  "outputs/real_web_domain_expansion_clean_run/run_summary.json",
-                      "bytes":  1132,
-                      "sha256":  "1ea451b4268751aa857e620815c046a3d249c0a450d5f0ed8ebc0b4a5bc7e811"
+                      "path":  "outputs/url_fixture_ablation/scenarios_fixture.jsonl",
+                      "bytes":  145433,
+                      "sha256":  "2ba072f7fec51512636e682f0208876c75795241126513c7e2c0ce1ef86d4c21"
                   },
                   {
                       "path":  "outputs/url_fixture_ablation_run/corruption_mode_deltas.json",
@@ -533,9 +543,9 @@
                       "sha256":  "f154763092fe820e1a17d0652aaee5faa749d3940ab64a0fbf8350bb692f860b"
                   },
                   {
-                      "path":  "outputs/url_fixture_ablation_run/examples.json",
-                      "bytes":  68190,
-                      "sha256":  "89446016efc574ab4627e6d062a13367495a30147c3d6c033fd19c456014442c"
+                      "path":  "outputs/real_web_domain_expansion_clean_run/run_summary.json",
+                      "bytes":  1132,
+                      "sha256":  "1ea451b4268751aa857e620815c046a3d249c0a450d5f0ed8ebc0b4a5bc7e811"
                   },
                   {
                       "path":  "outputs/url_fixture_ablation/build_manifest.json",
@@ -546,11 +556,6 @@
                       "path":  "outputs/url_fixture_ablation/inspection_note.md",
                       "bytes":  2127,
                       "sha256":  "e4486718c78563939e362b1a69be5b5e86614ade892638d16da6c4424eb22adf"
-                  },
-                  {
-                      "path":  "outputs/url_fixture_ablation/scenarios_fixture.jsonl",
-                      "bytes":  145433,
-                      "sha256":  "2ba072f7fec51512636e682f0208876c75795241126513c7e2c0ce1ef86d4c21"
                   }
               ]
 }
